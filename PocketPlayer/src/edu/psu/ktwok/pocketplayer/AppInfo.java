@@ -7,7 +7,8 @@ import android.view.Menu;
 import android.view.View;
 
 public class AppInfo extends Activity {
-
+	Intent intent;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,7 +23,8 @@ public class AppInfo extends Activity {
 	}
 
 	public void goToTitle(View v) {
-		Intent intent = new Intent(this, TitleScreen.class);
+		intent = new Intent(this, TitleScreen.class);
 		startActivity(intent);
+		finish();
 	}
 }
