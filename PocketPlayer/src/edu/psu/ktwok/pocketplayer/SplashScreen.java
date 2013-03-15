@@ -25,7 +25,7 @@ public class SplashScreen extends Activity {
 	
 	@Override
 	public void onBackPressed() {
-		finish();
+		//finish();
 	}
 
 	public void goToTitle(View v) {
