@@ -41,6 +41,7 @@
         android:layout_alignLeft="@+id/button3"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="59dp"
-        android:text="@string/login" />
+        android:text="@string/login" 
+        android:onClick="goToLogin"/>
 
 </RelativeLayout>
