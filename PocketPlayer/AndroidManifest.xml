@@ -30,10 +30,6 @@
             android:name="edu.psu.ktwok.pocketplayer.AppInfo"
             android:label="@string/title_activity_app_info" >
         </activity>
-        <activity
-            android:name="edu.psu.ktwok.pocketplayer.LoginActivity"
-            android:label="@string/title_activity_login" >
-        </activity>
     </application>
 
 </manifest>
