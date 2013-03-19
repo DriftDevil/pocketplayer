@@ -24,6 +24,7 @@
                 android:layout_marginTop="5dip"
                 android:layout_marginBottom="20dip"
                 android:singleLine="true"
+                android:textColor="#ffffff"
                 android:hint="@string/email"/>
           
           <!--  Password Label -->
@@ -37,6 +38,7 @@
                 android:layout_marginTop="5dip"
                 android:singleLine="true"
                 android:inputType="textPassword"
+                android:textColor="#ffffff"
                 android:hint="@string/password"/>
           
           <!-- Login button -->
