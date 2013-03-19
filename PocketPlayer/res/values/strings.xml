@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">PocketPlayer</string>
+    <string name="app_name">Pocket Player</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_splash_screen">Splash Screen</string>
@@ -37,5 +37,9 @@
     <string name="title_activity_mail_screen">Mail Screen</string>
     <string name="title_activity_friend_screen">Friend Screen</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="newreg">New to Pocket Players? Register here</string>
 
 </resources>
