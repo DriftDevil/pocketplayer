@@ -28,7 +28,7 @@ public class TitleScreen extends Activity {
 	@Override
 	public void onBackPressed() {
 		new AlertDialog.Builder(this)
-			.setMessage("Are you sure you want to exit?")
+			.setMessage("Are you sure you want to exit?");
 //		intent = new Intent(this, SplashScreen.class);
 //		startActivity(intent);
 	}
