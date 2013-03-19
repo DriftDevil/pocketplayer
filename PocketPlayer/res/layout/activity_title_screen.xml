@@ -21,7 +21,8 @@
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
-        android:text="@string/exit" />
+        android:text="@string/exit" 
+        android:onClick="exitApp" />
     
     <Button
         android:id="@+id/button3"

@@ -34,5 +34,9 @@ public class TitleScreen extends Activity {
 		intent = new Intent(this, AppInfo.class);
 		startActivity(intent);
 	}
+	
+	public void exitApp(View v) {
+		finish();
+	}
 
 }

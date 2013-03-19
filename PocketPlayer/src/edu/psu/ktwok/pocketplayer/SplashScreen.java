@@ -2,7 +2,6 @@ package edu.psu.ktwok.pocketplayer;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
@@ -23,11 +22,12 @@ public class SplashScreen extends Activity {
 		return true;
 	}
 	
-//	@Override
-//	public void onBackPressed() {
-//		super.onBackPressed();
-//	}
-
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+		finish();
+	}
+	
 	public void goToTitle(View v) {
 		intent = new Intent(this, TitleScreen.class);
 		startActivity(intent);
