@@ -2,6 +2,8 @@ package edu.psu.ktwok.pocketplayer;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
@@ -24,8 +26,18 @@ public class SplashScreen extends Activity {
 	
 	@Override
 	public void onBackPressed() {
-		super.onBackPressed();
-		finish();
+		new AlertDialog.Builder(this)
+			.setMessage("Are you sure you want to exit?")
+			.setCancelable(false)
+			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface dialog, int id) {
+					finish();					
+				}
+			})
+			.setNegativeButton("Cancel", null)
+			.show();
 	}
 	
 	public void goToTitle(View v) {

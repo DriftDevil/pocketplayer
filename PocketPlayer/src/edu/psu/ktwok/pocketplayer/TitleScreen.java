@@ -3,6 +3,7 @@ package edu.psu.ktwok.pocketplayer;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
@@ -27,10 +28,8 @@ public class TitleScreen extends Activity {
 	
 	@Override
 	public void onBackPressed() {
-		new AlertDialog.Builder(this)
-			.setMessage("Are you sure you want to exit?");
-//		intent = new Intent(this, SplashScreen.class);
-//		startActivity(intent);
+		intent = new Intent(this, SplashScreen.class);
+		startActivity(intent);
 	}
 	
 	public void goToAbout(View v) {
