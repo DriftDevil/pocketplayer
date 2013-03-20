@@ -17,6 +17,8 @@ public class ContactMail extends Activity {
 		//implement action bar
 		ActionBar aBar = getActionBar();
 		aBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+		aBar.setDisplayShowHomeEnabled(false);
+		aBar.setDisplayShowTitleEnabled(false);
 		
 		//friend tab
 		String lab1 = getResources().getString(R.string.friends); //what do i id?
