@@ -9,7 +9,7 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 public class LoginActivity extends Activity {
-	
+	Intent i;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -19,7 +19,7 @@ public class LoginActivity extends Activity {
 		regScreen.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
-				Intent i = new Intent(getApplicationContext(), RegisterActivity.class);
+				i = new Intent(getApplicationContext(), RegisterActivity.class);
 				startActivity(i);
 			}
 		});
@@ -30,6 +30,11 @@ public class LoginActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.login, menu);
 		return true;
+	}
+	
+	public void goToContactList(View v) {
+		i = new Intent(this, SplashScreen.class);
+		startActivity(i);
 	}
 
 }
