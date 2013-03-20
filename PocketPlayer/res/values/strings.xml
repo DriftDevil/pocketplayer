@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">PocketPlayer</string>
+    <string name="app_name">Pocket Player</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_splash_screen">Splash Screen</string>
@@ -11,6 +11,8 @@
     <string name="title_activity_character_select">Character Select</string>
     <string name="title_activity_character_info">Character Info</string>
     <string name="title_activity_edit_screen">Edit Screen</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
     <string name="Stat">Stats</string>
     <string name="Equipment">Equipment</string>
     <string name="Skills">Skills and Feats</string>
@@ -37,7 +39,11 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="newreg">New Registration</string>
+    <string name="newreg2">Register</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_login">LoginActivity</string>
+    <string name="full_name">Registration Full Name</string>
+    <string name="alreadyreg">Already has account! Login here</string>
+    
+    
 
 </resources>
