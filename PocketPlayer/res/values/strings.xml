@@ -13,8 +13,10 @@
     <string name="title_activity_edit_screen">Edit Screen</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_register">Register</string>
+    <string name="title_contact_mail">Contacts</string>
     <string name="Stat">Stats</string>
     <string name="Equipment">Equipment</string>
+    <string name="okay">OK</string>
     <string name="Skills">Skills and Feats</string>
     <string name="cont">Continue</string>
     <string name="nchar">[New Slot]</string>

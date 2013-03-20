@@ -33,7 +33,7 @@ public class LoginActivity extends Activity {
 	}
 	
 	public void goToContactList(View v) {
-		i = new Intent(this, SplashScreen.class);
+		i = new Intent(this, GameSelect.class);
 		startActivity(i);
 	}
 

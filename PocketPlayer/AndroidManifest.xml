@@ -38,6 +38,18 @@
             android:name="edu.psu.ktwok.pocketplayer.RegisterActivity"
             android:label="@string/title_activity_register" >
         </activity>
+        <activity 
+            android:name="edu.psu.ktwok.pocketplayer.ContactMail"
+            android:label="@string/title_contact_mail">
+        </activity>
+        <activity
+            android:name="edu.psu.ktwok.pocketplayer.CharSelect"
+            android:label="@string/title_activity_game_select" >
+        </activity>
+        <activity
+            android:name="edu.psu.ktwok.pocketplayer.GameSelect"
+            android:label="@string/title_activity_game_select" >
+        </activity>
     </application>
 
 </manifest>

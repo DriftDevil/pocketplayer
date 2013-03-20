@@ -15,30 +15,30 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnExit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/btnLogin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
         android:text="@string/exit" 
         android:onClick="exitApp" />
     
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnAbout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
+        android:layout_below="@+id/btnExit"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
         android:text="@string/about" 
         android:onClick="goToAbout"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button3"
+        android:layout_alignLeft="@+id/btnAbout"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="59dp"
         android:text="@string/login" 

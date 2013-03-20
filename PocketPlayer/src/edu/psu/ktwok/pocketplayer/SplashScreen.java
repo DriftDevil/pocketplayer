@@ -43,5 +43,6 @@ public class SplashScreen extends Activity {
 	public void goToTitle(View v) {
 		intent = new Intent(this, TitleScreen.class);
 		startActivity(intent);
+		finish();
 	}
 }
