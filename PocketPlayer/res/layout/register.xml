@@ -12,11 +12,11 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:padding="10dip"
-          android:background="#000000">
+          android:background="#ffffff">
           <!-- Full Name Label -->
           <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:text="@string/full_name"/>
           
           <EditText android:id="@+id/reg_fullname"
@@ -25,13 +25,13 @@
                 android:layout_marginTop="5dip"
                 android:singleLine="true"
                 android:layout_marginBottom="20sp"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:hint="@string/full_name"/>
           
           <!--  Email Label -->
           <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:text="@string/email"/>
           
           <EditText android:id="@+id/reg_email"
@@ -41,13 +41,13 @@
                 android:inputType="textEmailAddress"
                 android:singleLine="true"
                 android:layout_marginBottom="20sp"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:hint="@string/email"/>
           
           <!-- Password Label -->
           <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:text="@string/password"/>
           
           <EditText android:id="@+id/reg_password"
@@ -56,7 +56,7 @@
                 android:inputType="textPassword"
                 android:singleLine="true"
                 android:layout_marginTop="5sp"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:hint="@string/password"/>
           
           <!-- Register Button -->

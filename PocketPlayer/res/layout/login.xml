@@ -11,12 +11,12 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:padding="10sp"
-          android:background="#000000">
+          android:background="#ffffff">
           
           <!--  Email Label -->
           <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:text="@string/email"/>
           
           <EditText android:layout_width="fill_parent"
@@ -24,13 +24,13 @@
                 android:layout_marginTop="5dip"
                 android:layout_marginBottom="20dip"
                 android:singleLine="true"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:hint="@string/email"/>
           
           <!--  Password Label -->
           <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:text="@string/password"/>
           
           <EditText android:layout_width="fill_parent"
@@ -38,7 +38,7 @@
                 android:layout_marginTop="5dip"
                 android:singleLine="true"
                 android:inputType="textPassword"
-                android:textColor="#ffffff"
+                android:textColor="#000000"
                 android:hint="@string/password"/>
           
           <!-- Login button -->
