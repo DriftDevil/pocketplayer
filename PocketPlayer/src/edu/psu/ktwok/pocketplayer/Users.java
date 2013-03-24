@@ -30,6 +30,16 @@ public class Users {
 		this._email = email;
 	}
 	
+	// Get ID
+	public int getId() {
+		return this._id;
+	}
+	
+	// Set ID
+	public void setId(int id) {
+		this._id = id;
+	}
+	
 	// Get Name
 	public String getName() {
 		return this._name;
