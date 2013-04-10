@@ -66,7 +66,7 @@ public class Users {
 	}
 	
 	// Set Password
-	public void sestPassword(String password) {
+	public void setPassword(String password) {
 		this._password = password;
 	}
 }
