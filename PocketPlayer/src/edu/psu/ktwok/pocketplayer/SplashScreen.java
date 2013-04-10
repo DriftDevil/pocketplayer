@@ -33,7 +33,8 @@ public class SplashScreen extends Activity {
 				
 				@Override
 				public void onClick(DialogInterface dialog, int id) {
-					finish();					
+					finish();
+					System.exit(0);
 				}
 			})
 			.setNegativeButton("Cancel", null)

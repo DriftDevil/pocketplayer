@@ -38,9 +38,9 @@
             android:name="edu.psu.ktwok.pocketplayer.RegisterActivity"
             android:label="@string/title_activity_register" >
         </activity>
-        <activity 
+        <activity
             android:name="edu.psu.ktwok.pocketplayer.ContactMail"
-            android:label="@string/title_contact_mail">
+            android:label="@string/title_contact_mail" >
         </activity>
         <activity
             android:name="edu.psu.ktwok.pocketplayer.CharSelect"

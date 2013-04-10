@@ -44,6 +44,7 @@ public class TitleScreen extends Activity {
 	
 	public void exitApp(View v) {
 		finish();
+		System.exit(0);
 	}
 
 }
