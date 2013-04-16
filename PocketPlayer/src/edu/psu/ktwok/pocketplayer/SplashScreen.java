@@ -28,13 +28,13 @@ public class SplashScreen extends Activity {
 	public void onBackPressed() {
 		new AlertDialog.Builder(this)
 			.setMessage("Are you sure you want to exit?")
-			.setCancelable(false)
+//			.setCancelable(false)
 			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 				
 				@Override
 				public void onClick(DialogInterface dialog, int id) {
 					finish();
-					System.exit(0);
+					System.exit(id);
 				}
 			})
 			.setNegativeButton("Cancel", null)

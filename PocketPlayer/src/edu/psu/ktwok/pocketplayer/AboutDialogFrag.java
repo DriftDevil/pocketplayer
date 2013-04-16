@@ -11,7 +11,7 @@ public class AboutDialogFrag  extends DialogFragment {
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 		builder.setTitle(R.string.about);
-		builder.setMessage(R.string.about + "\n" + R.string.author + ": Kenny Huang & Kevin Joseph")
+		builder.setMessage("\u00A9 2013 Kenny Huang & Kevin Joseph\nVersion: 1.0")
 			.setPositiveButton(R.string.okay, new DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int id) {
