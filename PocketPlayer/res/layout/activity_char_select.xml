@@ -21,8 +21,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="@string/nchar"
-        android:onClick="goToCharInfo" />
+        android:text="@string/nchar" />
  
     <Button
         android:id="@+id/new3"

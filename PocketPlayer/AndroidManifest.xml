@@ -57,6 +57,10 @@
             android:name="edu.psu.ktwok.pocketplayer.SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
+        <activity 
+            android:name="edu.psu.ktwok.pocketplayer.CharInfo"
+            android:label="@string/title_activity_character_info" >
+        </activity>
     </application>
 
 </manifest>

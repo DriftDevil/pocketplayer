@@ -5,5 +5,11 @@
         android:title="@string/pref_app_color_title"
         android:key="pref_key_app_color_settings">
    
+    <ListPreference 
+        android:title="@string/pref_theme_change"
+        android:key="pref_theme_change"
+        android:dialogTitle="@string/pref_theme_change"
+        android:entries="@array/theme"
+        android:entryValues="@array/theme"/>
     </PreferenceCategory>
 </PreferenceScreen>

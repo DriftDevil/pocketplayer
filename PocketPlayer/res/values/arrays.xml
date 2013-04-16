@@ -41,4 +41,7 @@
         <item >Survival</item>
         <item >Swim</item>
     </string-array>
+    <string-array name="theme">
+        <item >Dark</item>
+    </string-array>
 </resources>

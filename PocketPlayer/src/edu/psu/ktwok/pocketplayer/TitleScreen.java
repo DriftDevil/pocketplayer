@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class TitleScreen extends Activity {
 
@@ -56,6 +57,8 @@ public class TitleScreen extends Activity {
 	}
 	
 	public void exitApp(View v) {
+		Toast toast = Toast.makeText(getApplicationContext(), "Thank You For Using PocketPlayer!", Toast.LENGTH_SHORT);
+		toast.show();
 		TitleScreen.this.finish();
 	}
 
