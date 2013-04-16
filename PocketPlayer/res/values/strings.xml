@@ -47,6 +47,7 @@
     <string name="full_name">Registration Full Name</string>
     <string name="alreadyreg">Already has account! Login here</string>
     <string name="pref_app_color_title">Color</string>
+    <string name="pref_app_colors">Colors</string>
     <string name="title_activity_settings">Settings</string>
 
 </resources>

@@ -17,4 +17,8 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="Black" parent="AppBaseTheme">
+                <item name="android:background">@android:color/background_dark</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
 </resources>
