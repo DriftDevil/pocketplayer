@@ -23,25 +23,15 @@
         android:layout_marginTop="46dp"
         android:text="@string/exit" 
         android:onClick="exitApp" />
-    
-    <Button
-        android:id="@+id/btnAbout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnExit"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"
-        android:text="@string/about" 
-        android:onClick="goToAbout"/>
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnAbout"
         android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="59dp"
-        android:text="@string/login" 
-        android:onClick="goToLogin"/>
+        android:onClick="goToLogin"
+        android:text="@string/login" />
 
 </RelativeLayout>
