@@ -8,37 +8,44 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
 
-public class ContactMail extends Activity {
-
-	@Override
+public class CharInfo extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_contact_mail); //needed?
+		setContentView(R.layout.activity_char_info); //needed?
+		
 		//implement action bar
 		ActionBar aBar = getActionBar();
 		aBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		
-		//friend tab
-		String lab1 = getResources().getString(R.string.friends); //what do i id?
+		//stat tab
+		String lab1 = getResources().getString(R.string.Stat); //what do i id?
 		Tab tab = aBar.newTab();
 		tab.setText(lab1);
-		TabListener<friendFrag> friFrag = new TabListener<friendFrag>(this, lab1, friendFrag.class);
-		tab.setTabListener(friFrag);
+		TabListener<StatFrag> stFrag = new TabListener<StatFrag>(this, lab1,StatFrag.class);
+		tab.setTabListener(stFrag);
 		aBar.addTab(tab);
 		
-		//mail tab
-		String lab2 = getResources().getString(R.string.mail);
+		//weapon tab
+		String lab2 = getResources().getString(R.string.Equipment);
 		tab = aBar.newTab();
 		tab.setText(lab2);
-		TabListener<mailFrag> mFrag = new TabListener<mailFrag>(this, lab2, mailFrag.class);
-		tab.setTabListener(mFrag);
+		TabListener<WeaponFrag> wFrag = new TabListener<WeaponFrag>(this, lab2, WeaponFrag.class);
+		tab.setTabListener(wFrag);
+		aBar.addTab(tab);
+		
+		//skill tab
+		String lab3 = getResources().getString(R.string.skills);
+		tab = aBar.newTab();
+		tab.setText(lab3);
+		TabListener<SkillFrag> skFrag = new TabListener<SkillFrag>(this, lab3, SkillFrag.class);
+		tab.setTabListener(skFrag);
 		aBar.addTab(tab);
 	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.contact_menu, menu);
+		getMenuInflater().inflate(R.menu.info_menu, menu);
 		return true;
 	}
 	
@@ -72,5 +79,4 @@ public class ContactMail extends Activity {
 			//nothing when tapped twice :P
 		}
 	}
-
 }

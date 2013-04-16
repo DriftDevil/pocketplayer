@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="job">
+        <item >Rogue</item>
+        <item >Paladin</item>
+        <item >Fighter</item>
+        <item >Archer</item>
+        <item >GunSlinger</item>
+        <item >Mage</item>
+    </string-array>
+    <string-array name="weapon">
+        <item >Longsword</item>
+        <item >Shortsword</item>
+        <item >Bow</item>
+        <item >Shortbow</item>
+        <item >Rifle</item>
+        <item >Greatsword</item>
+        <item >Dagger</item>
+    </string-array>
+    <string-array name="armor">
+        <item >Leather</item>
+        <item >Chainmail</item>
+        <item >Plate</item>
+        <item >Leaf</item>
+    </string-array>
+    <string-array name="skills">
+        <item >Acrobatics</item>
+        <item >Appraise</item>
+        <item >Bluff</item>
+        <item >Climb</item>
+        <item >Diplomacy</item>
+        <item >Disguise</item>
+        <item >Heal</item>
+        <item >Linguistics</item>
+        <item >Perception</item>
+        <item >Perform</item>
+        <item >SenseMotive</item>
+        <item >SleightOfHand</item>
+        <item >Spellcraft</item>
+        <item >Stealth</item>
+        <item >Survival</item>
+        <item >Swim</item>
+    </string-array>
+</resources>

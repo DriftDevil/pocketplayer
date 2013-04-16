@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wTab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:gravity="top" >
+	
+	<TextView 
+	    android:id="@+id/PrimLabel"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="200dp"
+        android:paddingTop="25dp"
+        android:gravity="left"
+        android:text="Primary" />
+	
+	<TextView 
+	    android:id="@+id/OffLabel"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PrimLabel"
+        android:paddingTop="25dp"
+        android:text="Offhand" />
+	
+	<TextView 
+	    android:id="@+id/ArmorLabel"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OffLabel"
+        android:paddingTop="25dp"
+        android:text="Armor" />
+	
+</RelativeLayout>

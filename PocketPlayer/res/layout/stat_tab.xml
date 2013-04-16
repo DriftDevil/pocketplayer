@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stTab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:gravity="top" >
+    
+    <TextView 
+        android:id="@+id/NameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pref_key_char"/>
+    
+    <TextView
+        android:id="@+id/StrLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="200dp"
+        android:layout_below="@id/NameLabel"
+        android:paddingTop="25dp"
+        android:gravity="left"
+        android:text="Strength" />
+    
+    <TextView
+        android:id="@+id/DexLabel"
+        android:layout_below="@id/StrLabel"
+        android:paddingTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dexterity" />
+    
+    <TextView
+        android:id="@+id/ConLabel"
+        android:layout_below="@id/DexLabel"
+        android:paddingTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Constitution" />
+    
+    <TextView
+        android:id="@+id/IntLabel"
+        android:layout_below="@id/ConLabel"
+        android:paddingTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intelligence" />
+    
+    <TextView
+        android:id="@+id/WisLabel"
+        android:layout_below="@id/IntLabel"
+        android:paddingTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wisdom" />
+
+    <TextView
+        android:id="@+id/ChaLabel"
+        android:layout_below="@id/WisLabel"
+        android:paddingTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charisma" />
+    
+</RelativeLayout>

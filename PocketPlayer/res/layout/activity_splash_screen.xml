@@ -9,27 +9,31 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:padding="10sp"
-    android:background="#ffffff">
-    
-      <EditText
-          android:id="@+id/editText1"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_centerHorizontal="true"
-          android:layout_centerVertical="true"
-          android:ems="10"
-          android:focusable="false"
-          android:focusableInTouchMode="false"
-          android:gravity="center_vertical|center_horizontal"
-          android:inputType="none|text"
-          android:selectAllOnFocus="false"
-          android:text="@string/app_name" />
+    android:background="@drawable/swordsandshield">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="none|text"
+        android:selectAllOnFocus="false"
+        android:text="@string/app_name" >
+
+        <requestFocus />
+    </EditText>
 
     <Button
         android:id="@+id/btnContinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="goToTitle"
         android:text="@string/cont" />
