@@ -50,6 +50,10 @@
             android:name="edu.psu.ktwok.pocketplayer.GameSelect"
             android:label="@string/title_activity_game_select" >
         </activity>
+        <activity
+            android:name="edu.psu.ktwok.pocketplayer.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
     </application>
 
 </manifest>

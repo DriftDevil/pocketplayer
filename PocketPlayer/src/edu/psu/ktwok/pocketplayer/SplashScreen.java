@@ -15,6 +15,7 @@ public class SplashScreen extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash_screen);
+		
 	}
 	
 	@Override
@@ -28,13 +29,12 @@ public class SplashScreen extends Activity {
 	public void onBackPressed() {
 		new AlertDialog.Builder(this)
 			.setMessage("Are you sure you want to exit?")
-//			.setCancelable(false)
+			.setCancelable(false)
 			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 				
 				@Override
 				public void onClick(DialogInterface dialog, int id) {
-					finish();
-					System.exit(id);
+					SplashScreen.this.finish();
 				}
 			})
 			.setNegativeButton("Cancel", null)

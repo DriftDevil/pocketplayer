@@ -9,7 +9,8 @@ import android.view.View;
 
 public class TitleScreen extends Activity {
 
-	Intent intent;
+	Intent i;
+	private static final int SETTINGS_ACTIVITY_REQUEST_CODE = 200;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,19 +31,27 @@ public class TitleScreen extends Activity {
 			case R.id.tab1:
 				AboutDialogFrag newFrag = new AboutDialogFrag();
 				newFrag.show(getFragmentManager(), "sdfTest");
+				return true;
+			case R.id.menu_settings:
+				i = new Intent(this, SettingsActivity.class);
+				startActivityForResult(i, SETTINGS_ACTIVITY_REQUEST_CODE);
+				return true;
+				
 			default:
 				return super.onOptionsItemSelected(item);
 		}
 	}
 	@Override
 	public void onBackPressed() {
-		intent = new Intent(this, SplashScreen.class);
-		startActivity(intent);
+		i = new Intent(this, SplashScreen.class);
+		startActivity(i);
+		finish();
+		
 	}
 	
 	public void goToLogin(View v) {
-		intent = new Intent(this, LoginActivity.class);
-		startActivity(intent);
+		i = new Intent(this, LoginActivity.class);
+		startActivity(i);	
 	}
 	
 	public void exitApp(View v) {
