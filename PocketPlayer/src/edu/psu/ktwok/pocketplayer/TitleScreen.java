@@ -52,14 +52,11 @@ public class TitleScreen extends Activity {
 	public void goToLogin(View v) {
 		i = new Intent(this, LoginActivity.class);
 		startActivity(i);	
-
-		i = new Intent(this, LoginActivity.class);
-		startActivity(i);
+		
 	}
 	
 	public void exitApp(View v) {
-		finish();
-		System.exit(0);
+		TitleScreen.this.finish();
 	}
 
 }
