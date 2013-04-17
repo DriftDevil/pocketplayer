@@ -42,12 +42,12 @@ public class TitleScreen extends Activity {
 				return super.onOptionsItemSelected(item);
 		}
 	}
+	
 	@Override
 	public void onBackPressed() {
 		i = new Intent(this, SplashScreen.class);
 		startActivity(i);
 		finish();
-		
 	}
 	
 	public void goToLogin(View v) {

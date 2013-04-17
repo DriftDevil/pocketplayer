@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Toast;
 
 public class SplashScreen extends Activity {
 	Intent intent;
@@ -33,6 +34,8 @@ public class SplashScreen extends Activity {
 				
 				@Override
 				public void onClick(DialogInterface dialog, int id) {
+					Toast toast = Toast.makeText(getApplicationContext(), "Thank You For Using PocketPlayer!", Toast.LENGTH_SHORT);
+					toast.show();
 					SplashScreen.this.finish();
 				}
 			})
