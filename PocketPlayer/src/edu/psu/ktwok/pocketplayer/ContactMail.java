@@ -5,11 +5,15 @@ import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 public class ContactMail extends Activity {
-
+	Intent i;
+	private static final int SETTINGS_ACTIVITY_REQUEST_CODE = 200;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -42,6 +46,18 @@ public class ContactMail extends Activity {
 		return true;
 	}
 	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch(item.getItemId()) {
+			case R.id.menu_settings:
+				i = new Intent(this, SettingsActivity.class);
+				startActivityForResult(i, SETTINGS_ACTIVITY_REQUEST_CODE);
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+	}
+	
 	private class TabListener<T extends Fragment> implements ActionBar.TabListener{
 		private Fragment mFrag;
 		private final Activity mAct;
@@ -66,7 +82,7 @@ public class ContactMail extends Activity {
 		
 		@Override
 		public void onTabUnselected(Tab t, FragmentTransaction ft){
-			if (mFrag == null)
+			if (mFrag != null)
 				ft.detach(mFrag);
 		}
 		
