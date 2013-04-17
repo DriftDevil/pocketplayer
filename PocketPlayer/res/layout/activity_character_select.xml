@@ -40,7 +40,8 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="@string/nchar" />
+        android:text="@string/nchar" 
+        android:onClick="goToCharInfo"/>
 
     <Button
         android:id="@+id/new2"
@@ -49,7 +50,8 @@
         android:layout_alignLeft="@+id/new1"
         android:layout_below="@+id/new1"
         android:layout_marginTop="30dp"
-        android:text="@string/nchar" />
+        android:text="@string/nchar"
+        android:onClick="goToCharInfo"/>
     
     <Button
         android:id="@+id/new3"
@@ -58,6 +60,7 @@
         android:layout_alignLeft="@+id/new2"
         android:layout_below="@+id/new2"
         android:layout_marginTop="30dp"
-        android:text="@string/nchar" />
+        android:text="@string/nchar"
+        android:onClick="goToCharInfo"/>
 
 </RelativeLayout>
