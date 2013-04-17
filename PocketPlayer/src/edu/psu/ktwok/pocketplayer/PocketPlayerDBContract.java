@@ -90,19 +90,6 @@ public class PocketPlayerDBContract {
 		
 	}
 	
-	public static abstract class TblLogin implements BaseColumns {
-		public static final String TABLE_NAME = "login";
-		
-		public static final String COLUMN_NAME_EMAIL = "Email";
-		public static final String COLUMN_TYPE_EMAIL = "TEXT";
-		
-		public static final String COLUMN_NAME_PASS = "Password";
-		public static final String COLUMN_TYPE_PASS = "TEXT";
-		
-		public static final String COLUMN_NAME_GID = "gameID";
-		public static final String COLUMN_TYPE_GID = "INTEGER";
-	}
-	
 	public static abstract class TblRegister implements BaseColumns {
 		public static final String TABLE_NAME = "register";
 		
@@ -125,11 +112,11 @@ public class PocketPlayerDBContract {
 		public static final String COLUMN_NAME_GID = "gameID";
 		public static final String COLUMN_TYPE_GID = "INTEGER";
 		
+		public static final String COLUMN_NAME_USER = "name";
+		public static final String COLUMN_TYPE_USER = "TEXT";
+		
 		public static final String COLUMN_NAME_EMAIL = "Email";
 		public static final String COLUMN_TYPE_EMAIL = "TEXT";
-		
-		public static final String COLUMN_NAME_PASS = "Password";
-		public static final String COLUMN_TYPE_PASS = "TEXT";
 		
 		
 	}
