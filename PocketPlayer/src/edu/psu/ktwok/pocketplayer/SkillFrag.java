@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 
 public class SkillFrag extends ListFragment{
 
@@ -27,4 +28,10 @@ public class SkillFrag extends ListFragment{
 				android.R.layout.simple_list_item_1, skills);
 		setListAdapter(adapter);
 	}
+	
+	@Override
+	public void onListItemClick(ListView l, View v, int position, long id){
+		
+	}
+	
 }

@@ -22,8 +22,8 @@ public class CharSelect extends Activity{
 		return true;
 	}
 	
-//	public void goToCharInfo(View v) {
-//		i = new Intent(this, CharInfo.class);
-//		startActivity(i);
-//	}
+	public void goToCharInfo(View v) {
+		i = new Intent(this, ContactMail.class);
+		startActivity(i);
+	}
 }
