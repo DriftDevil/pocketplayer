@@ -9,6 +9,7 @@ import android.view.View;
 
 public class CharSelect extends Activity{
 	Intent i;
+	private static final int SETTINGS_ACTIVITY_REQUEST_CODE = 200;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +31,13 @@ public class CharSelect extends Activity{
 			i = new Intent(this, ContactMail.class);
 			startActivity(i);
 			return true;
+		case R.id.menu_settings:
+			i = new Intent(this, SettingsActivity.class);
+			startActivityForResult(i, SETTINGS_ACTIVITY_REQUEST_CODE);
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
-		
 	}
 	
 	public void goToCharInfo(View v) {
