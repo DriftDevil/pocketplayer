@@ -12,6 +12,6 @@ public class WeaponFrag extends Fragment{
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState){
-		return (LinearLayout) inflater.inflate(R.layout.weap_tab, container, false);
+		return inflater.inflate(R.layout.weap_tab, container, false);
 	}
 }

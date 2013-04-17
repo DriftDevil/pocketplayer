@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/stTab"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:orientation="vertical"
     android:gravity="top" >
     
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="25dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
         android:text="@string/pref_key_char"/>
     
     <TextView
@@ -66,4 +66,4 @@
         android:layout_height="wrap_content"
         android:text="Charisma" />
     
-</RelativeLayout>
+</LinearLayout>

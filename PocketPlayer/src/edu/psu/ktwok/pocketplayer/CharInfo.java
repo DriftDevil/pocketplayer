@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 
 public class CharInfo extends Activity{
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_char_info); //needed?
@@ -61,6 +62,7 @@ public class CharInfo extends Activity{
 			mClass = c;
 		}
 		
+		@Override
 		public void onTabSelected(Tab t, FragmentTransaction ft){
 			if(mFrag == null){
 				mFrag = Fragment.instantiate(mAct, mClass.getName());
@@ -70,11 +72,13 @@ public class CharInfo extends Activity{
 				ft.attach(mFrag);
 		}
 		
+		@Override
 		public void onTabUnselected(Tab t, FragmentTransaction ft){
 			if (mFrag == null)
 				ft.detach(mFrag);
 		}
 		
+		@Override
 		public void onTabReselected(Tab t, FragmentTransaction ft){
 			//nothing when tapped twice :P
 		}

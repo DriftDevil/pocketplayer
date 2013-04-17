@@ -18,6 +18,7 @@ public class LoginActivity extends Activity {
 		
 		regScreen.setOnClickListener(new OnClickListener() {
 			
+			@Override
 			public void onClick(View v) {
 				i = new Intent(getApplicationContext(), RegisterActivity.class);
 				startActivity(i);

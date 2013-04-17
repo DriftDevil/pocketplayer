@@ -13,6 +13,6 @@ public class StatFrag extends Fragment{
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState){
-		return (LinearLayout) inflater.inflate(R.layout.stat_tab, container, false);
+		return inflater.inflate(R.layout.stat_tab, container, false);
 	}
 }
