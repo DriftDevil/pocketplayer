@@ -1,8 +1,8 @@
 package edu.psu.ktwok.pocketplayer;
 
 public class Users {
-	int _id;
-	String _name;
+	int _gid;
+	String _user;
 	String _email;
 	String _password;
 	
@@ -10,9 +10,9 @@ public class Users {
 	public Users() {}
 	
 	// Constructor for Registration
-	public Users(int id, String name, String email, String password) {
-		this._id = id;
-		this._name = name;
+	public Users(int gid, String user, String email, String password) {
+		this._gid = gid;
+		this._user = user;
 		this._email = email;
 		this._password = password;
 	}
@@ -24,30 +24,30 @@ public class Users {
 	}
 	
 	// Constructor for Contacts
-	public Users(int id, String name, String email) {
-		this._id = id;
-		this._name = name;
+	public Users(int gid, String user, String email) {
+		this._gid = gid;
+		this._user = user;
 		this._email = email;
 	}
 	
 	// Get ID
 	public int getId() {
-		return this._id;
+		return this._gid;
 	}
 	
 	// Set ID
-	public void setId(int id) {
-		this._id = id;
+	public void setId(int gid) {
+		this._gid = gid;
 	}
 	
 	// Get Name
 	public String getName() {
-		return this._name;
+		return this._user;
 	}
 	
 	// Set Name
-	public void setName(String name) {
-		this._name = name;
+	public void setName(String user) {
+		this._user = user;
 	}
 	
 	// Get Email

@@ -21,7 +21,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="200dp"
-        android:layout_below="@id/NameLabel"
         android:paddingTop="25dp"
         android:gravity="left"
         android:text="Strength" />
