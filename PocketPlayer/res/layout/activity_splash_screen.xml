@@ -1,15 +1,18 @@
-<ScrollView
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent"
-  android:fillViewport="true">
-  
-  <RelativeLayout
-  	android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:padding="10sp"
-    android:background="@drawable/swordsandshield">
+    android:layout_height="match_parent"
+    android:background="@drawable/pocketplayerktwok"
+    android:orientation="vertical"
+    android:padding="10sp" >
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToTitle"
+        android:text="@string/cont" />
 
     <EditText
         android:id="@+id/editText1"
@@ -17,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:focusable="false"
         android:focusableInTouchMode="false"
@@ -29,14 +32,4 @@
         <requestFocus />
     </EditText>
 
-    <Button
-        android:id="@+id/btnContinue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="goToTitle"
-        android:text="@string/cont" />
-
-    </RelativeLayout>
- </ScrollView>
+</RelativeLayout>

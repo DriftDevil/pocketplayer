@@ -1,6 +1,7 @@
 package edu.psu.ktwok.pocketplayer;
 
 import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
@@ -46,6 +47,7 @@ public class TitleScreen extends Activity {
 	@Override
 	public void onBackPressed() {
 		i = new Intent(this, SplashScreen.class);
+		i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(i);
 		finish();
 	}
@@ -57,7 +59,7 @@ public class TitleScreen extends Activity {
 	}
 	
 	public void exitApp(View v) {
-		Toast toast = Toast.makeText(getApplicationContext(), "Thank You For Using PocketPlayer!", Toast.LENGTH_SHORT);
+		Toast toast = Toast.makeText(getApplicationContext(), "Thank You For Using Pocket Player!", Toast.LENGTH_SHORT);
 		toast.show();
 		TitleScreen.this.finish();
 	}

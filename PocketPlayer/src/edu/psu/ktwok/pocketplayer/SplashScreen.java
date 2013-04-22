@@ -34,7 +34,7 @@ public class SplashScreen extends Activity {
 				
 				@Override
 				public void onClick(DialogInterface dialog, int id) {
-					Toast toast = Toast.makeText(getApplicationContext(), "Thank You For Using PocketPlayer!", Toast.LENGTH_SHORT);
+					Toast toast = Toast.makeText(getApplicationContext(), "Thank You For Using Pocket Player!", Toast.LENGTH_SHORT);
 					toast.show();
 					SplashScreen.this.finish();
 				}

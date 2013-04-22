@@ -1,11 +1,15 @@
 package edu.psu.ktwok.pocketplayer;
 
+import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class GameSelect extends Activity{
 	Intent i;
@@ -15,6 +19,10 @@ public class GameSelect extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_game_select);
+		
+		// Enable ActionBar
+		ActionBar abar = getActionBar();
+		abar.setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override
@@ -27,6 +35,23 @@ public class GameSelect extends Activity{
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch(item.getItemId()) {
+			case android.R.id.home:
+				i = new Intent(this, LoginActivity.class);
+				i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+				new AlertDialog.Builder(this)
+				.setMessage("Are you sure you want to logout?")
+//				.setCancelable(false)
+				.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface dialog, int id) {
+						startActivity(i);
+					}
+				})
+				.setNegativeButton("Cancel", null)
+				.show();
+				
+				return true;
 			case R.id.menu_settings:
 				i = new Intent(this, SettingsActivity.class);
 				startActivityForResult(i, SETTINGS_ACTIVITY_REQUEST_CODE);
@@ -34,6 +59,24 @@ public class GameSelect extends Activity{
 			default:
 				return super.onOptionsItemSelected(item);
 		}
+	}
+	
+	@Override
+	public void onBackPressed() {
+		i = new Intent(this, LoginActivity.class);
+		i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		new AlertDialog.Builder(this)
+			.setMessage("Are you sure you want to logout?")
+//			.setCancelable(false)
+			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface dialog, int id) {
+					startActivity(i);
+				}
+			})
+			.setNegativeButton("Cancel", null)
+			.show();
 	}
 	
 	public void goToDD(View v) {

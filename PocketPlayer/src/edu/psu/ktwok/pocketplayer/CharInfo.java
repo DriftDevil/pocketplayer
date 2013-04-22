@@ -22,6 +22,7 @@ public class CharInfo extends Activity {
 		//implement action bar
 		ActionBar aBar = getActionBar();
 		aBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+		aBar.setDisplayHomeAsUpEnabled(true);
 		
 		//stat tab
 		String lab1 = getResources().getString(R.string.Stat); //what do i id?
@@ -58,6 +59,11 @@ public class CharInfo extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch(item.getItemId()) {
+			case android.R.id.home:
+				i = new Intent(this, CharSelect.class);
+				i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+				startActivity(i);
+				return true;
 			case R.id.menu_settings:
 				i = new Intent(this, SettingsActivity.class);
 				startActivityForResult(i, SETTINGS_ACTIVITY_REQUEST_CODE);

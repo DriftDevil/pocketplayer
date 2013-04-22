@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
 	// Database Version Number
-	private static final int DATABASE_VERSION = 5;
+	private static final int DATABASE_VERSION = 1;
 	// Database Name
 	private static final String DATABASE_NAME = "usersManager";
 	
