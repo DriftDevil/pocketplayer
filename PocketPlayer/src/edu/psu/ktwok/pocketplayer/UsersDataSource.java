@@ -4,7 +4,9 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
+import android.database.sqlite.SQLiteConstraintException;
 import android.database.sqlite.SQLiteDatabase;
+import android.widget.Toast;
 
 public class UsersDataSource {
 	// Database Fields
@@ -63,14 +65,23 @@ public class UsersDataSource {
 		dbHandler.close();
 	}
 	
-	public void register(String user, String email, String password) {
+	public boolean register(String user, String email, String password) {
 		ContentValues vals = new ContentValues();
+		
 		vals.put(PocketPlayerDBContract.TblRegister.COLUMN_NAME_USER, user);
 		vals.put(PocketPlayerDBContract.TblRegister.COLUMN_NAME_EMAIL, email);
 		vals.put(PocketPlayerDBContract.TblRegister.COLUMN_NAME_PASS, password);
 		
 		// Insert Registered Users to DB
-		database.insert(PocketPlayerDBContract.TblRegister.TABLE_NAME, null, vals);
+		try {
+			database.insertOrThrow(PocketPlayerDBContract.TblRegister.TABLE_NAME, null, vals);
+			return true;
+		}
+		catch (SQLiteConstraintException e) {
+			return false;
+		}
+
+		
 	}
 	
 	public boolean login(String email, String password) throws SQLException {

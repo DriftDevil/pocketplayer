@@ -16,7 +16,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	private static final String SQL_REG_ENTIRES =
 			"CREATE TABLE " + PocketPlayerDBContract.TblRegister.TABLE_NAME + " (" +
 					PocketPlayerDBContract.TblRegister.COLUMN_NAME_GID + " " +
-					PocketPlayerDBContract.TblRegister.COLUMN_TYPE_GID + " PRIMARY KEY AUTOINCREMENT," +
+					PocketPlayerDBContract.TblRegister.COLUMN_TYPE_GID + " PRIMARY KEY," +
 					PocketPlayerDBContract.TblRegister.COLUMN_NAME_USER + " " +
 					PocketPlayerDBContract.TblRegister.COLUMN_TYPE_USER + "," +
 					PocketPlayerDBContract.TblRegister.COLUMN_NAME_EMAIL + " " +
