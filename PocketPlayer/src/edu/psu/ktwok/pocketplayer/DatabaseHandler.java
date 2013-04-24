@@ -16,11 +16,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	private static final String SQL_REG_ENTIRES =
 			"CREATE TABLE " + PocketPlayerDBContract.TblRegister.TABLE_NAME + " (" +
 					PocketPlayerDBContract.TblRegister.COLUMN_NAME_GID + " " +
-					PocketPlayerDBContract.TblRegister.COLUMN_TYPE_GID + " PRIMARY KEY," +
+					PocketPlayerDBContract.TblRegister.COLUMN_TYPE_GID + "," +
 					PocketPlayerDBContract.TblRegister.COLUMN_NAME_USER + " " +
 					PocketPlayerDBContract.TblRegister.COLUMN_TYPE_USER + "," +
 					PocketPlayerDBContract.TblRegister.COLUMN_NAME_EMAIL + " " +
-					PocketPlayerDBContract.TblRegister.COLUMN_TYPE_EMAIL + "," +
+					PocketPlayerDBContract.TblRegister.COLUMN_TYPE_EMAIL + " PRIMARY KEY," +
 					PocketPlayerDBContract.TblRegister.COLUMN_NAME_PASS + " " +
 					PocketPlayerDBContract.TblRegister.COLUMN_TYPE_PASS + " )";
 	// Delete Registration
